@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2d4b9471e2.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="header">
+
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="/KatjaL/home.html">Home</a>
+                <a href="/KatjaL/portfolio.html">Portfolio</a>
+                <a href="/KatjaL/contact.html">Contact</a>
+                <a href="/KatjaL/gallery.html">Gallery</a>
+
+            </div>
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776; </span>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+        <div class="topnav">
+            <div class="topnav-name"><a href="home.html">Katja Lobas</a></div>
+            <div class="topnav-pages">
+                <a href="/KatjaL/home.html">Home</a>
+                <span class="page"><a href="/KatjaL/portfolio.html">Portfolio</a></span>
+                <a href="/KatjaL/contact.html">Contact</a>
+                <a href="/KatjaL/gallery.html">Gallery</a>
+            </div>
+        </div>
+
+        <div class="header-content">
+
+            <div class="header-name">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="content">
+
+        <div class="cards">
+            <!--CV-->
+            <a href="/cv.html">
+            <div class="card">
+                <i class="card-icon fas fa-file"></i>
+                <h3>CV</h3>
+            </div>
+            </a>
+            <!--Skådespel-->
+            <a href="portfolio/acting.html">
+            <div class="card">
+                <i class="card-icon fas fa-theater-masks"></i>
+                <h3>ACTING</h3>
+            </div>
+            <!--Musik-->
+            <a href="portfolio/music.html">
+                <div class="card">
+                    <i class="card-icon fab fa-itunes-note"></i>
+                    <h3>MUSIC</h3>
+                </div>
+            </a>
+            <!--Poesi-->
+            <a href="portfolio/poetry.html">
+            <div class="card">
+                <i class="card-icon fas fa-pen-fancy"></i>
+                <h3>POETRY</h3>
+            </div>
+            </a>
+        
+            <!--Konst-->
+            <!-- <a href="/portfolio/.html">
+            <div class="card">
+                <i class="card-icon fas fa-palette"></i>
+                <h3>ART</h3>
+            </div> -->
+            <!--Film-->
+            <a href="portfolio/moive.html">
+            <div class="card">
+                <i class="card-icon fas fa-film"></i>
+                <h3>MOVIE</h3>
+            </div>
+            </a>
+        
+            <!--Stipendie-->
+            <!-- <a href="/portfolio/.html">
+            <div class="card">
+                <i class="card-icon fas fa-award"></i>
+                <h3>SCHOLARSHIP</h3>
+            </div>
+            </a> -->
+            <!--Inläsning-->
+            <a href="portfolio/audiobooks.html">
+            <div class="card">
+                <i class="card-icon fas fa-headphones"></i>
+                <h3>AUDIOBOOKS</h3>
+            </div>
+            </a>
+            <!--Utbildning-->
+            <a href="portfolio/education.html">
+            <div class="card">
+                <i class="card-icon fas fa-graduation-cap"></i>
+                <h3>EDUCATION</h3>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/katjusha/"><i class="icon fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/katja-lobas-55092b70/"><i class="icon fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/katjusha/"><i class="icon far fa-envelope"></i></a>
+        </div>
+
+
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
