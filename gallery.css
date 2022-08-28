@@ -466,7 +466,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+.footer-link a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 .icon {
     font-size: 34px;
     color: white;

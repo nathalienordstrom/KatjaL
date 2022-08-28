@@ -334,6 +334,13 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 
 }
 
+.content-text a {
+    color:black;
+}
+.content-text a:hover {
+    color: white;
+}
+
 footer {
     background-color: black;
     padding: 20px;
@@ -341,7 +348,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+.footer-link a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 .icon {
     font-size: 34px;
     color: white;

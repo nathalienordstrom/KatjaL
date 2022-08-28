@@ -346,7 +346,7 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 
 .footer-link a{
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
 }
