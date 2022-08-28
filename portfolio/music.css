@@ -225,6 +225,25 @@ margin:0;
     width: 300px;
     margin-bottom: 20px;
 }
+.movie-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-content h4{
+font-size: 20px;
+}
+
+.movie-content a{
+color: black;    
+margin-right: 20px;
+font-size: 80px;
+}
+.movie-content a:hover{
+    text-shadow: 0 0 5px #FF0000, 0 0 10px #ae00ff;
+    }
+
+
 .back-arrow {
     margin-top:30px;
     display: flex;
