@@ -208,12 +208,25 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 70px 100px 70px;
     background-color: rgb(255, 255, 255);
 }
 
 .content-header {
     font-size: 50px;
-    margin: 0 50px 100px 50px;
+    margin: 0;
+}
+
+.back-arrow {
+    margin-top:30px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.back-arrow-image {
+height: 40px;
+
 }
 
 .content-header h1{
